@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* @media (max-width: 768px) {
+  body,
+  body,
+  #root {
+    height: 1100px;
+  }
+} */
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 3px; /* Độ rộng của thanh cuộn */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: #f0f0f0; /* Màu nền của track */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #a8d5b0; /* Màu của thumb */
+  border-radius: 6px; /* Độ cong của thumb */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #e0f5e4; /* Màu khi hover */
+}
