@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thông báo sắp kết thúc hợp đồng thuê nhà</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f4f4f4; color: #333; margin: 0; padding: 20px; max-width: 600px;">
+    <div style="background-color: #ffffff; padding: 20px; border-radius: 5px;">
+        <h2 style="color: #ff5733; text-align: center;">Thông báo sắp kết thúc hợp đồng thuê nhà</h2>
+        <p>Kính gửi <strong>{{receiver}}</strong>,</p>
+        <p>Chúng tôi xin trân trọng thông báo rằng hợp đồng thuê nhà của bạn, bắt đầu từ ngày <strong>{{startDate}}</strong>, sẽ kết thúc vào ngày <strong>{{endDate}}</strong>.</p>
+        
+        <p>Để đảm bảo tính liên tục và thuận lợi cho việc gia hạn, nếu bạn có nhu cầu tiếp tục thuê nhà, vui lòng tiến hành thủ tục gia hạn ít nhất một tuần trước ngày kết thúc hợp đồng. Điều này sẽ giúp chúng tôi chuẩn bị tốt nhất cho bạn trong trường hợp tiếp tục sử dụng dịch vụ của chúng tôi.</p>
+        
+        <h3 style="color: #333;">Thông tin hợp đồng hiện tại:</h3>
+        <ul style="list-style: none; padding: 0;">
+            <li><strong>Địa chỉ nhà:</strong> {{location}}</li>
+            <li><strong>Giá thuê:</strong> {{price}}/tháng</li>
+            <li><strong>Ngày bắt đầu hợp đồng:</strong> {{startDate}}</li>
+            <li><strong>Ngày kết thúc hợp đồng:</strong> {{endDate}}</li>
+        </ul>
+        
+        <div style="display: flex; justify-content: center; gap: 20px; margin-top: 20px;">
+            <a href={{url}} style="background-color: #28a745; color: #ffffff; padding: 10px 20px; width: 45%; text-align: center; border-radius: 5px; text-decoration: none;">Gia hạn hợp đồng</a>
+            <a href={{url}} style="background-color: #dc3545; color: #ffffff; padding: 10px 20px; width: 45%; text-align: center; border-radius: 5px; text-decoration: none;">Xác nhận kết thúc hợp đồng</a>
+        </div>
+        
+        <p style="font-size: 12px; color: #888888; text-align: center; margin-top: 20px;">
+            Trân trọng cảm ơn,<br>
+            <strong>Chủ Nhà</strong>
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Verification</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f2f2f2; margin: 0; padding: 0;">
+
+  <table width="100%" bgcolor="#f2f2f2" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <td align="center">
+        <table width="600" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" style="margin: 20px; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+          
+          <!-- Header -->
+          <tr>
+            <td align="center" style="padding: 20px; background-color: #4CAF50; color: #ffffff; border-radius: 8px 8px 0 0;">
+              <h1 style="margin: 0; font-size: 24px;">Xác thực tài khoản của bạn</h1>
+            </td>
+          </tr>
+
+          <!-- Message Body -->
+          <tr>
+            <td style="padding: 20px; text-align: center; color: #333;">
+              <p style="margin: 0 0 20px; font-size: 16px;">
+                Xin chào {{receiver}},
+              </p>
+              <p style="margin: 0 0 20px; font-size: 16px;">
+                Cảm ơn bạn đã đăng ký! Vui lòng sử dụng mã xác thực dưới đây để hoàn tất việc kích hoạt tài khoản của bạn.
+              </p>
+              <p style="font-size: 24px; font-weight: bold; color: #4CAF50; margin: 0 0 20px;">
+               {{activeCode}}
+              </p>
+              <p style="margin: 0 0 20px; font-size: 16px;">
+                Mã này có hiệu lực trong 5 phút. Nếu bạn không yêu cầu mã xác thực, vui lòng bỏ qua email này.
+              </p>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td align="center" style="padding: 20px; background-color: #f9f9f9; color: #999; font-size: 12px;">
+              <p style="margin: 0;">&copy; 2024 Công ty của bạn. Mọi quyền được bảo lưu.</p>
+              <p style="margin: 0;">Nếu bạn cần hỗ trợ, hãy liên hệ với chúng tôi tại <a href="mailto:support@company.com" style="color: #4CAF50; text-decoration: none;">support@company.com</a></p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>

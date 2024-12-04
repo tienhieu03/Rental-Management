@@ -1,0 +1,15 @@
+{
+    "_id": "ObjectId",
+    "contractNumber": "string",  // Số hợp đồng
+    "roomId": "ObjectId",  // Phòng được thuê
+    "tenantId": "ObjectId",  // Người thuê (liên kết với collection `users`)
+    "startDate": "ISODate",  // Ngày bắt đầu hợp đồng
+    "endDate": "ISODate",  // Ngày kết thúc hợp đồng
+    "deposit": "number",  // Tiền cọc
+    "monthlyRent": "number",  // Giá thuê hàng tháng
+    "terms": "string",  // Các điều khoản khác (ví dụ: không nuôi thú cưng, không thay đổi cấu trúc phòng)
+    "status": "string",  // Trạng thái hợp đồng ("active", "terminated", "pending")
+    "createdAt": "ISODate",
+    "updatedAt": "ISODate"
+  }
+  
